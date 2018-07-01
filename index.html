@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Train Schedules</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script rel="text/javascript" src="assets/javascript/app.js"></script>
+
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="titleBlock">
+                <div id="headText">Josh's Train Schedule</div>
+                <div id="cTime">Current Time</div>
+                <div id="cTime2">00:11:00</div>
+            </div>
+
+            <div id="trainSchedule">
+               <table class="jTable">
+                   <thead>
+                   <tr id="trainTitle">
+                       <th>Train Name</th>
+                       <th>Destination</th>
+                       <th>Freq(Min)</th>
+                       <th>Next Arrival</th>
+                       <th>Minutes Away</th>
+                   </tr>
+                  </thead>
+                   <tbody>
+                   <tr class="trainsPosted">
+                       <td>Trenton Express</td>
+                       <td>Trenton</td>
+                       <td>25</td>
+                       <td>05:35 PM</td>
+                       <td>10</td>
+                   </tr>
+                </tbody>
+                </table>
+               <form id="jform">
+                   <ul>
+                   <label>Train Name</label>
+                   <li><input id="tName" type="text"></li>
+                   
+                   <label>Destination</label>
+                  <li> <input id="tDest" type="text"></li>
+
+                   <label>First Train Time (HH:mm - milatary time)</label>
+                  <li><input id="tTime" type="text"></li>
+
+                   <label>Frequency(min)</label>
+                  <li><input id="tFreq" type="text"></li>
+                   
+                    </ul>
+                   <button id="jbutton">Submit</button>
+
+               </form>
+            </div>
+
+        </div>
+
+        
+    </body>
+</html>
